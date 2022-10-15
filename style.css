@@ -18,12 +18,12 @@
     --ff-font : 'Bai Jamjuree', sans-serif;
 }
 
+
 /* ======= header ======== */
 
 .header-container{
     text-align: center;
     font-family: var(--ff-font);
-    
 }
 
 .header-bg{
@@ -31,6 +31,7 @@
     padding-top: 6em;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .logo-img{
@@ -65,8 +66,16 @@
     background-color: var(--strong-cyan);
 }
 
+.btn-cyan:hover{
+    box-shadow: 0px 2px 6px var(--strong-cyan);
+}
+
 .btn-blue{
     background-color: var(--light-blue)
+}
+
+.btn-blue:hover{
+    box-shadow: 0px 2px 6px var(--light-blue);
 }
 
 
@@ -165,6 +174,20 @@
     text-align: center;
 }
 
+.section-four-container{
+    margin-bottom: 2em;
+}
+
+.section-four-container > h3{
+    color: var(--dark-grayish-blue);
+    font-size: 2.2em;
+    margin-bottom: .4em;
+}
+
+.section-four-container > p{
+    color: var(--grayish-blue);
+}
+
 .section-four-flex{
     display: flex;
     justify-content: center;
@@ -183,4 +206,189 @@
     margin: 0 auto;
     color: var(--grayish-blue);
     line-height: 1.6;
+}
+
+
+/* ======== section five ========== */
+
+.section-five-images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 6em 0;
+}
+
+.section-five-images img{
+    margin-right: 4em;
+}
+
+
+/* ======== section-six ======== */
+
+.section-six{
+    text-align: center;
+    font-family: var(--ff-font);
+}
+
+.section-six-heading{
+    font-size: 2.3em;
+    color: var(--dark-grayish-blue);
+    margin-bottom: .4em;
+}
+
+.section-six-content{
+    width: 45%;
+    margin: 0 auto;
+    color: var(--grayish-blue);
+    margin-bottom: 1.4em;
+}
+
+.section-six-btn{
+    margin-right: .6em;
+    text-decoration: none;
+    padding: .6em 1.4em;
+    border-radius: 4em;
+    color: #fff;
+}
+
+
+/* ========= footer =========== */
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--ff-font);
+    background-color: rgba(203, 204, 204, .25);
+    margin-top: 8em;
+    padding: 2.8em 0;
+}
+
+.footer-logo-img{
+    width: 4em;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 30em;
+    color: var(--dark-grayish-blue);
+    line-height: 2.4;
+}
+
+.footer-content > p{
+    margin-right: 4em;
+    cursor: pointer;
+}
+
+.footer-content > p:hover{
+    color: var(--strong-cyan);
+}
+
+.links{
+    font-size: 1.8em;
+}
+
+.links > a{
+    margin-right: 1em;
+    color: var(--dark-grayish-blue);
+}
+
+.link-facebook:hover,
+.link-twitter:hover,
+.link-instagram:hover{
+    color: var(--strong-cyan);
+}
+
+
+/* =========== Mobile ========== */
+
+
+@media(max-width: 30em){
+
+    /*======= header ======== */
+
+   .header-bg{
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   .header-title{
+    font-size: 2.1em;
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .header-content{
+    margin-top: .8em;
+    width: 80%;
+   }
+
+   .btn{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+   }
+
+   .btn-cyan{
+    margin-bottom: .8em;
+   }
+
+
+   /* ======== section-one ======== */
+
+   .section-one-heading{
+    font-size: 1.8em;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: .6em;
+   }
+
+   .section-one-content{
+    width: 70%;
+   }
+
+   /* ======== section-two ========= */
+
+   .flex-container{
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .section-two-image{
+    margin: 0;
+    margin-bottom: 2.4em;
+   }
+
+   .quick-search > h3,
+   .icloud-sync > h3,
+   .complete-history > h3{
+    font-size: 1.6em;
+}
+
+   .quick-search > p,
+   .icloud-sync > p,
+   .complete-history > p{
+    width: 70%;
+    margin: 0 auto;
+   }
+
+
+   /* ======= section-three ======== */
+
+   .section-three-content{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    margin-top: 2em;
+   }
+
+   .section-three-image{
+    width: 90%;
+   }
 }
