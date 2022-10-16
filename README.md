@@ -17,7 +17,7 @@ The goal of this project to practice HTML and CSS skills and to improve in it. T
 
 ## Screenshot
 
-### Solution
+![](./images/clipboardlandingpagescreenshot.png)
 
 
 
